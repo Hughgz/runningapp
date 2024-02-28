@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="profile1RowModel" type="com.uptrain.app.modules.profile.data.model.Profile1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowframe"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <TextView android:ellipsize="end" android:id="@+id/txtFrame"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_1pxv"
+            android:layout_weight="0.1" android:layout_width="0dp"
+            android:lineSpacingExtra="@dimen/_4pxh"
+            android:paddingBottom="@dimen/_3pxv"
+            android:paddingStart="@dimen/_4pxh"
+            android:paddingTop="@dimen/_4pxv" android:singleLine="true"
+            android:text="@{profile1RowModel.txtFrame}"
+            style="@style/txtSolidRounded" tools:text="@string/lbl"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumntitle"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8pxh"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_weight="0.69" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtTitleSeven"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_3pxh"
+                android:singleLine="true"
+                android:text="@{profile1RowModel.txtTitleSeven}"
+                style="@style/txtRobotoregular14_1" tools:text="@string/lbl_ch_y_g_n_y"/>
+            <TextView android:ellipsize="end" android:id="@+id/txtDate"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_3pxh"
+                android:singleLine="true"
+                android:text="@{profile1RowModel.txtDate}"
+                style="@style/txtRobotoregular12" tools:text="@string/lbl_25_02_2024"/>
+        </LinearLayout>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtKilometsCounterOne"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_9pxv"
+            android:layout_marginStart="@dimen/_8pxh"
+            android:layout_marginTop="@dimen/_7pxv"
+            android:layout_weight="0.21" android:layout_width="0dp"
+            android:lineSpacingExtra="@dimen/_3pxh"
+            android:singleLine="true"
+            android:text="@{profile1RowModel.txtKilometsCounterOne}"
+            style="@style/txtRobotomedium14" tools:text="@string/lbl_2_kilomets"/>
+    </LinearLayout>
+</layout>

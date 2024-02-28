@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="homeRowModel" type="com.uptrain.app.modules.home.data.model.HomeRowModel"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearSteps"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+        <ImageView android:id="@+id/imageBabyFeet"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_50pxh"
+            android:layout_marginEnd="@dimen/_37pxh"
+            android:layout_marginStart="@dimen/_37pxh"
+            android:layout_marginTop="@dimen/_12pxv"
+            android:layout_width="@dimen/_50pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_babyfeet}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_babyfeet"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtSbc"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_37pxh"
+            android:layout_marginStart="@dimen/_37pxh"
+            android:layout_marginTop="@dimen/_4pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{homeRowModel.txtSbc}"
+            style="@style/txtRobotoromanbold12" tools:text="@string/lbl_s_b_c"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtOneHundred"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_37pxh"
+            android:layout_marginStart="@dimen/_37pxh"
+            android:layout_marginTop="@dimen/_6pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{homeRowModel.txtOneHundred}"
+            style="@style/txtRobotoromanbold13" tools:text="@string/lbl_100"/>
+    </LinearLayout>
+</layout>

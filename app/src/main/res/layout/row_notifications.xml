@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="notificationsRowModel" type="com.uptrain.app.modules.notifications.data.model.NotificationsRowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackellipseone"
+        android:layout_height="wrap_content" android:layout_width="match_parent">
+        <LinearLayout android:id="@+id/linearRowellipseone"
+            android:layout_gravity="top|center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_9pxh"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <View
+                android:background="@drawable/rectangle_bg_bluegray_101_radius_21"
+                android:id="@+id/viewEllipseOne"
+                android:layout_height="@dimen/_40pxh"
+                android:layout_marginBottom="@dimen/_6pxv"
+                android:layout_marginTop="@dimen/_16pxv" android:layout_width="@dimen/_42pxh"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumnlanguage"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19pxh"
+                android:layout_weight="0.87" android:layout_width="0dp" android:orientation="vertical">
+                <TextView android:id="@+id/txtLanguage"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="@{notificationsRowModel.txtLanguage}"
+                    style="@style/txtPoppinsregular12" tools:text="@string/msg_lorem_ipsum_dol"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txt20001203"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_7pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{notificationsRowModel.txt20001203}"
+                    style="@style/txtPoppinsregular12_1" tools:text="@string/lbl_20_00_12_03"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/linearRowellipsetwo"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStylewhite_A700">
+            <View
+                android:background="@drawable/rectangle_bg_bluegray_101_radius_21"
+                android:id="@+id/viewEllipseTwo"
+                android:layout_height="@dimen/_40pxh"
+                android:layout_marginBottom="@dimen/_12pxv"
+                android:layout_marginStart="@dimen/_9pxh"
+                android:layout_marginTop="@dimen/_17pxv" android:layout_width="@dimen/_42pxh"/>
+            <FrameLayout android:id="@+id/frameStacklanguageOne"
+                android:layout_height="@dimen/_54pxv"
+                android:layout_marginBottom="@dimen/_5pxv"
+                android:layout_marginEnd="@dimen/_15pxh"
+                android:layout_marginStart="@dimen/_19pxh"
+                android:layout_marginTop="@dimen/_9pxv" android:layout_width="@dimen/_275pxh">
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txtLanguageOne"
+                    android:layout_gravity="top|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{notificationsRowModel.txtLanguageOne}"
+                    style="@style/txtPoppinsregular12" tools:text="@string/msg_lorem_ipsum_dol"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txt20001203One"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{notificationsRowModel.txt20001203One}"
+                    style="@style/txtPoppinsregular12_1" tools:text="@string/lbl_20_00_12_03"/>
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>
